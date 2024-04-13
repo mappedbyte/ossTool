@@ -1,13 +1,13 @@
 package initialize
 
 import (
-	"ossTool/global"
+	"ossTool/model"
 	"ossTool/view/desktop"
 )
 
 func InitDesktop() {
-	global.MainWindow = desktop.InitMainWindow()
-	global.MainWindow.InitAppSetting()
-	global.MainWindow.Show()
-	global.MainWindow.NewNotifyIcon()
+	model.AppMainWindow = desktop.InitMainWindow()
+	model.AppMainWindow.InitAppSetting()
+	model.AppMainWindow.Show()
+	model.AppMainWindow.NewNotifyIcon()
 }

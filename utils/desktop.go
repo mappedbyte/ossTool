@@ -1,22 +1,22 @@
 package utils
 
 import (
-	"ossTool/view/desktop"
+	"ossTool/model"
 )
 
-func RunWidowsDesktop(ossWindows *desktop.OssMainWindow) {
+func RunWidowsDesktop(ossWindows *model.OssMainWindow) {
 	ossWindows.Show()
 }
 
-func HideWidowsDesktop(ossWindows *desktop.OssMainWindow) {
+func HideWidowsDesktop(ossWindows *model.OssMainWindow) {
 	ossWindows.Hide()
 }
 
-func CloseWidowsDesktop(ossWindows *desktop.OssMainWindow) {
+func CloseWidowsDesktop(ossWindows *model.OssMainWindow) {
 	ossWindows.Close()
 }
 
-func HideAndShowDesktop(ossWindows *desktop.OssMainWindow) {
+func HideAndShowDesktop(ossWindows *model.OssMainWindow) {
 	if visible := ossWindows.Visible(); visible {
 		ossWindows.Hide()
 	} else {
