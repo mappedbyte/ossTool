@@ -103,7 +103,7 @@ func (mw *OssMainWindow) UploadFile() {
 	//等待上传
 	client, items, err := endpointConfig.CreateOssClient()
 	if err != nil {
-		walk.MsgBox(mw, "失败", "初始化配置失败,请检查配置!", walk.MsgBoxIconError)
+		walk.MsgBox(mw, "失败", "初始化配置失败,请检查配置或网络!", walk.MsgBoxIconError)
 		return
 	}
 	bucket, err := client.Bucket(endpointConfig.Bucket)
